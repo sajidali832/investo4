@@ -5,18 +5,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import UserTable from '@/app/components/admin/UserTable';
 import { ArrowLeft } from 'lucide-react';
-
-// Define the User type
-interface User {
-  id: string;
-  name: string;
-  phone: string;
-  paymentMethod: string;
-  screenshot: string;
-  amount: number;
-  status: 'pending' | 'approved' | 'rejected';
-  applicationDate: string;
-}
+import type { User } from '@/app/types';
 
 export default function FilteredUsersPage() {
   const params = useParams();
