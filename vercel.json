@@ -2,11 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "distDir": ".next"
-      }
+      "src": "stylo/package.json",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
