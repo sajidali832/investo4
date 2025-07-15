@@ -5,9 +5,9 @@ const nextConfig = {
   images: {
     domains: ['localhost'],
   },
-  experimental: {
-    serverActions: true,
-  },
+  webpack(config) {
+    return config;
+  }
 }
 
 module.exports = nextConfig
