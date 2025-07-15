@@ -3,7 +3,13 @@
   "builds": [
     {
       "src": "stylo/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/next",
+      "config": {
+        "installCommand": "npm install",
+        "buildCommand": "npm run build",
+        "outputDirectory": ".next",
+        "framework": "nextjs"
+      }
     }
   ],
   "routes": [
