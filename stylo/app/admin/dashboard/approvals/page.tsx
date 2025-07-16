@@ -13,6 +13,7 @@ interface PaymentSubmission {
     screenshotName?: string; // Old structure for backward compatibility
     status: 'pending' | 'approved' | 'rejected';
     submissionDate: string;
+    referralCode?: string;
 }
 
 export default function ApprovalsPage() {
